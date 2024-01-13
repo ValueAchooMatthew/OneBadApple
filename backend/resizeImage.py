@@ -3,7 +3,7 @@ from PIL import Image, ImageOps
 
 def resizeImage(image_path: str, final_size: [int, int]):
     img = Image.open(image_path)
-    # Assuminh desired size is smaller than input image
+    # Assuming desired size is smaller than input image
     resized_image = img.resize(final_size)
     return resized_image
 
