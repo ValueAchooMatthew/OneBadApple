@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+import Image from 'next/image'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -15,8 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='h-full'>
       <body className={inter.className}>{children}</body>
+      <svg className="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,0L24,48C48,96,96,192,144,202.7C192,213,240,139,288,144C336,149,384,235,432,250.7C480,267,528,213,576,202.7C624,192,672,224,720,213.3C768,203,816,149,864,160C912,171,960,245,1008,272C1056,299,1104,277,1152,234.7C1200,192,1248,128,1296,112C1344,96,1392,128,1416,144L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+
     </html>
   )
 }
