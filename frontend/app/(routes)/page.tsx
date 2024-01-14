@@ -10,7 +10,7 @@ export default function Home() {
         Addressing the United Nation's call to action for good health and wellbeing, one meal at a time.
       </h3>
       <div className="flex justify-center text-2xl mt-40 font-semibold text-white">
-        <Link href={""} className="px-3 py-1 rounded-md bg-blue-300 mr-12">
+        <Link href={"/food-checker"} className="px-3 py-1 rounded-md bg-blue-300 mr-12">
           Check Food Health
         </Link>
         <Link href={"/mission-statement"} className="px-3 py-1 rounded-md bg-blue-300 ml-12">
@@ -19,6 +19,7 @@ export default function Home() {
           </span>
         </Link>
       </div>
+      
     </main>
   )
 }
